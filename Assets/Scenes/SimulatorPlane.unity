@@ -137,7 +137,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 44877621}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 190.5, y: -370.5, z: 0}
+  m_LocalPosition: {x: 149.5, y: -409, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 698898175}
@@ -648,7 +648,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 317154979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 253.5, y: 397.5, z: 0}
+  m_LocalPosition: {x: 212.5, y: 436, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1607984245}
@@ -1760,7 +1760,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 698898171}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 253.5, y: 397.5, z: 0}
+  m_LocalPosition: {x: 212.5, y: 436, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1645942728}
@@ -2213,7 +2213,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 821292532}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 190.5, y: -338.5, z: 0}
+  m_LocalPosition: {x: 149.5, y: -377, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 698898175}
@@ -2963,7 +2963,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1334676028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.087, z: 1.4160004}
+  m_LocalPosition: {x: 0, y: -0.154, z: 1.4160004}
   m_LocalScale: {x: 1, y: 0.5339031, z: 0.7519173}
   m_Children:
   - {fileID: 1710509327}
@@ -3930,7 +3930,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1645942727}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -243.5, y: -371.3, z: 0}
+  m_LocalPosition: {x: -202.5, y: -409.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 698898175}
@@ -4152,8 +4152,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1710509326}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.0000089646, y: -0.27995, z: -1.24}
-  m_LocalScale: {x: 0.1850334, y: 0.729904, z: 0.18503338}
+  m_LocalPosition: {x: -0.0000089646, y: -0.27995, z: -1.865}
+  m_LocalScale: {x: 0.1850334, y: 1.35, z: 0.18503338}
   m_Children: []
   m_Father: {fileID: 1334676029}
   m_RootOrder: 0
@@ -5228,8 +5228,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c93204fc3acf4acdb710dc0be5928fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weightConfig: 0
-  cameraMode: 0
+  weightConfig: 1
+  cameraMode: 1
   mainCamera: {fileID: 482030217}
   vehicleObject: {fileID: 119772921}
   SpawnPoint: {fileID: 1274507964}
@@ -5260,8 +5260,8 @@ MonoBehaviour:
   weightModeText: {fileID: 821292534}
   graphOverlay: {fileID: 685435237}
   simState: 3
-  configName: 
-  turnSpeed: 100
+  configName: ev_150_30deg_3turn_1sec
+  turnSpeed: 150
   turnTime: 5
   restTime: 2
   driveForce: 1000
@@ -5286,9 +5286,9 @@ MonoBehaviour:
       duration: 1
     - angle: 30
       duration: 1
-  - configName: ic_100_30deg_3turn_1sec
+  - configName: ic_90_30deg_3turn_1sec
     weightConfig: 0
-    initSpeed: 100
+    initSpeed: 90
     turns:
     - angle: 30
       duration: 1
@@ -5296,9 +5296,9 @@ MonoBehaviour:
       duration: 1
     - angle: 30
       duration: 1
-  - configName: ev_100_30deg_3turn_1sec
+  - configName: ev_90_30deg_3turn_1sec
     weightConfig: 1
-    initSpeed: 100
+    initSpeed: 90
     turns:
     - angle: 30
       duration: 1
@@ -5319,6 +5319,26 @@ MonoBehaviour:
   - configName: ev_120_30deg_3turn_1sec
     weightConfig: 1
     initSpeed: 120
+    turns:
+    - angle: 30
+      duration: 1
+    - angle: -30
+      duration: 1
+    - angle: 30
+      duration: 1
+  - configName: ic_150_30deg_3turn_1sec
+    weightConfig: 0
+    initSpeed: 150
+    turns:
+    - angle: 30
+      duration: 1
+    - angle: -30
+      duration: 1
+    - angle: 30
+      duration: 1
+  - configName: ev_150_30deg_3turn_1sec
+    weightConfig: 1
+    initSpeed: 150
     turns:
     - angle: 30
       duration: 1
